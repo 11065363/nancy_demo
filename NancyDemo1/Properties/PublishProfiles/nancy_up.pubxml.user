@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\e_pan\vs\vs网站\Nancy</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="apiapp.json">
+      <publishTime>09/14/2017 17:09:27</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>09/14/2017 11:13:17</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>09/14/2017 11:13:17</publishTime>
+    </File>
+    <File Include="bin/Content/bootstrap-responsive.css">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Content/bootstrap.css">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Content/img/glyphicons-halflings-white.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Content/img/glyphicons-halflings.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Content/nancy-vertical-bf-tb.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Azure.AppService.ApiApps.Service.dll">
+      <publishTime>03/18/2015 17:02:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>01/05/2012 11:08:46</publishTime>
+    </File>
+    <File Include="bin/Nancy.dll">
+      <publishTime>12/21/2015 11:59:12</publishTime>
+    </File>
+    <File Include="bin/Nancy.Hosting.Aspnet.dll">
+      <publishTime>11/05/2015 14:40:52</publishTime>
+    </File>
+    <File Include="bin/NancyDemo1.dll">
+      <publishTime>09/18/2017 14:46:16</publishTime>
+    </File>
+    <File Include="bin/NancyDemo1.pdb">
+      <publishTime>09/18/2017 14:46:16</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Swashbuckle.Core.dll">
+      <publishTime>02/15/2015 17:57:08</publishTime>
+    </File>
+    <File Include="bin/System.IdentityModel.Tokens.Jwt.dll">
+      <publishTime>09/11/2014 13:32:14</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>01/28/2015 04:02:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/28/2015 04:02:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>01/28/2015 04:03:46</publishTime>
+    </File>
+    <File Include="bin/Views/index.html">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="bin/Views/layout.html">
+      <publishTime>09/14/2017 14:50:19</publishTime>
+    </File>
+    <File Include="bin/Views/layout2.html">
+      <publishTime>09/15/2017 09:52:07</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>11/24/2014 11:18:48</publishTime>
+    </File>
+    <File Include="Content/base.css">
+      <publishTime>09/18/2017 08:22:37</publishTime>
+    </File>
+    <File Include="Content/bootstrap-responsive.css">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/default.min.css">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/img/a.png">
+      <publishTime>09/15/2017 15:11:57</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings-white.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/img/glyphicons-halflings.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/nancy-vertical-bf-tb.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/scripts/bootstrap.js">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/scripts/highlight.min.js">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Content/scripts/jquery.min.js">
+      <publishTime>09/15/2017 09:44:50</publishTime>
+    </File>
+    <File Include="Content/scripts/jquery.qrcode.min.js">
+      <publishTime>09/18/2017 13:28:20</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap.css">
+      <publishTime>09/15/2017 09:39:12</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/bootstrap.min.css">
+      <publishTime>09/15/2017 09:39:38</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/CHANGELOG.md">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap.css">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/js/bootstrap.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/dist/js/npm.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/.jshintrc">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/bs-commonjs-generator.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/bs-glyphicons-data-generator.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/bs-lessdoc-parser.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/bs-raw-files-generator.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/change-version.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/configBridge.json">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/npm-shrinkwrap.json">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/grunt/sauce_browsers.yml">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/Gruntfile.js">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/affix.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/alert.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/button.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/carousel.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/collapse.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/dropdown.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/modal.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/popover.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/scrollspy.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/tab.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/tooltip.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/js/transition.js">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/alerts.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/badges.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/bootstrap.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/breadcrumbs.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/button-groups.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/buttons.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/carousel.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/close.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/code.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/component-animations.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/dropdowns.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/forms.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/glyphicons.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/grid.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/input-groups.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/jumbotron.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/labels.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/list-group.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/media.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/alerts.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/background-variant.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/border-radius.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/buttons.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/center-block.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/clearfix.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/forms.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/gradients.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/grid-framework.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/grid.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/hide-text.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/image.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/labels.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/list-group.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/nav-divider.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/nav-vertical-align.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/opacity.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/pagination.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/panels.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/progress-bar.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/reset-filter.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/reset-text.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/resize.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/responsive-visibility.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/size.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/tab-focus.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/table-row.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/text-emphasis.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/text-overflow.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/mixins/vendor-prefixes.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/modals.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/navbar.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/navs.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/normalize.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/pager.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/pagination.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/panels.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/popovers.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/print.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/progress-bars.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/responsive-embed.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/responsive-utilities.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/scaffolding.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/tables.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/theme.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/thumbnails.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/tooltip.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/type.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/utilities.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/variables.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/less/wells.less">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/LICENSE">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/package.json">
+      <publishTime>09/15/2017 09:18:44</publishTime>
+    </File>
+    <File Include="Content/Source/bootstrap/README.md">
+      <publishTime>09/15/2017 09:18:43</publishTime>
+    </File>
+    <File Include="icon.png">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Logic/Handler1.ashx">
+      <publishTime>09/18/2017 08:28:19</publishTime>
+    </File>
+    <File Include="Metadata/deploymentTemplates/apiappconfig.azureresource.json">
+      <publishTime>09/14/2017 17:09:27</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>09/18/2017 14:46:14</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>09/14/2017 11:13:17</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>09/14/2017 11:13:17</publishTime>
+    </File>
+    <File Include="Views/four.html">
+      <publishTime>09/15/2017 08:59:42</publishTime>
+    </File>
+    <File Include="Views/index.html">
+      <publishTime>09/14/2017 11:13:10</publishTime>
+    </File>
+    <File Include="Views/index2.html">
+      <publishTime>09/18/2017 14:39:37</publishTime>
+    </File>
+    <File Include="Views/layout.html">
+      <publishTime>09/14/2017 14:50:19</publishTime>
+    </File>
+    <File Include="Views/layout2.html">
+      <publishTime>09/15/2017 09:52:07</publishTime>
+    </File>
+    <File Include="Views/one.html">
+      <publishTime>09/15/2017 09:49:31</publishTime>
+    </File>
+    <File Include="Views/three.html">
+      <publishTime>09/14/2017 16:39:45</publishTime>
+    </File>
+    <File Include="Views/two.html">
+      <publishTime>09/14/2017 16:00:35</publishTime>
+    </File>
+    <File Include="Views/UpAndDown.html">
+      <publishTime>09/15/2017 14:57:49</publishTime>
+    </File>
+    <File Include="Views/UpAndDown2.html">
+      <publishTime>09/15/2017 14:57:39</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/18/2017 15:45:39</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

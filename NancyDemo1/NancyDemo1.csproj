@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E945E104-2687-4637-AE33-6EECBF157E8B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NancyDemo1</RootNamespace>
+    <AssemblyName>NancyDemo1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.AppService.ApiApps.Service, Version=0.9.16.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.AppService.ApiApps.Service.0.9.16\lib\net45\Microsoft.Azure.AppService.ApiApps.Service.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nancy, Version=1.4.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.1.4.3\lib\net40\Nancy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Aspnet">
+      <HintPath>..\packages\Nancy.Hosting.Aspnet.1.4.1\lib\net40\Nancy.Hosting.Aspnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.0.0\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.6\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\base.css" />
+    <Content Include="Content\bootstrap-responsive.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\bootstrap.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\default.min.css" />
+    <Content Include="Content\img\a.png" />
+    <Content Include="Content\img\glyphicons-halflings-white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\img\glyphicons-halflings.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\nancy-vertical-bf-tb.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\scripts\bootstrap.js" />
+    <Content Include="Content\scripts\highlight.min.js" />
+    <Content Include="Content\scripts\jquery.min.js" />
+    <Content Include="Content\scripts\jquery.qrcode.min.js" />
+    <Content Include="icon.png" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Content\Source\bootstrap.css" />
+    <Content Include="Content\Source\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Content\Source\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Source\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Content\Source\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Content\Source\bootstrap\dist\js\npm.js" />
+    <Content Include="Content\Source\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Source\bootstrap\Gruntfile.js" />
+    <Content Include="Content\Source\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="Content\Source\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="Content\Source\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Content\Source\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="Content\Source\bootstrap\grunt\change-version.js" />
+    <Content Include="Content\Source\bootstrap\js\affix.js" />
+    <Content Include="Content\Source\bootstrap\js\alert.js" />
+    <Content Include="Content\Source\bootstrap\js\button.js" />
+    <Content Include="Content\Source\bootstrap\js\carousel.js" />
+    <Content Include="Content\Source\bootstrap\js\collapse.js" />
+    <Content Include="Content\Source\bootstrap\js\dropdown.js" />
+    <Content Include="Content\Source\bootstrap\js\modal.js" />
+    <Content Include="Content\Source\bootstrap\js\popover.js" />
+    <Content Include="Content\Source\bootstrap\js\scrollspy.js" />
+    <Content Include="Content\Source\bootstrap\js\tab.js" />
+    <Content Include="Content\Source\bootstrap\js\tooltip.js" />
+    <Content Include="Content\Source\bootstrap\js\transition.js" />
+    <Content Include="Views\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\index2.html" />
+    <Content Include="Views\layout2.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\layout.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\three.html" />
+    <Content Include="Views\four.html" />
+    <Content Include="Views\two.html" />
+    <Content Include="Views\one.html" />
+    <Content Include="Views\UpAndDown.html" />
+    <Content Include="Views\UpAndDown2.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="CustomRootPathProvider.cs" />
+    <Compile Include="Logic\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Student.cs" />
+    <Compile Include="Modules\IndexModule.cs" />
+    <Compile Include="Modules\Module2.cs" />
+    <Compile Include="Modules\UpAndDown.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
+    <Content Include="apiapp.json" />
+    <Content Include="Content\Source\bootstrap\CHANGELOG.md" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="Content\Source\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="Content\Source\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Source\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Source\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Source\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Source\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Source\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Source\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Source\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Source\bootstrap\grunt\.jshintrc" />
+    <Content Include="Content\Source\bootstrap\grunt\configBridge.json" />
+    <Content Include="Content\Source\bootstrap\grunt\npm-shrinkwrap.json" />
+    <Content Include="Content\Source\bootstrap\grunt\sauce_browsers.yml" />
+    <Content Include="Content\Source\bootstrap\less\alerts.less" />
+    <Content Include="Content\Source\bootstrap\less\badges.less" />
+    <Content Include="Content\Source\bootstrap\less\bootstrap.less" />
+    <Content Include="Content\Source\bootstrap\less\breadcrumbs.less" />
+    <Content Include="Content\Source\bootstrap\less\button-groups.less" />
+    <Content Include="Content\Source\bootstrap\less\buttons.less" />
+    <Content Include="Content\Source\bootstrap\less\carousel.less" />
+    <Content Include="Content\Source\bootstrap\less\close.less" />
+    <Content Include="Content\Source\bootstrap\less\code.less" />
+    <Content Include="Content\Source\bootstrap\less\component-animations.less" />
+    <Content Include="Content\Source\bootstrap\less\dropdowns.less" />
+    <Content Include="Content\Source\bootstrap\less\forms.less" />
+    <Content Include="Content\Source\bootstrap\less\glyphicons.less" />
+    <Content Include="Content\Source\bootstrap\less\grid.less" />
+    <Content Include="Content\Source\bootstrap\less\input-groups.less" />
+    <Content Include="Content\Source\bootstrap\less\jumbotron.less" />
+    <Content Include="Content\Source\bootstrap\less\labels.less" />
+    <Content Include="Content\Source\bootstrap\less\list-group.less" />
+    <Content Include="Content\Source\bootstrap\less\media.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\alerts.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\background-variant.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\border-radius.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\buttons.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\center-block.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\clearfix.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\forms.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\gradients.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\grid-framework.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\grid.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\hide-text.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\image.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\labels.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\list-group.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\nav-divider.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\nav-vertical-align.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\opacity.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\pagination.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\panels.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\progress-bar.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\reset-filter.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\reset-text.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\resize.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\responsive-visibility.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\size.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\tab-focus.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\table-row.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\text-emphasis.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\text-overflow.less" />
+    <Content Include="Content\Source\bootstrap\less\mixins\vendor-prefixes.less" />
+    <Content Include="Content\Source\bootstrap\less\modals.less" />
+    <Content Include="Content\Source\bootstrap\less\navbar.less" />
+    <Content Include="Content\Source\bootstrap\less\navs.less" />
+    <Content Include="Content\Source\bootstrap\less\normalize.less" />
+    <Content Include="Content\Source\bootstrap\less\pager.less" />
+    <Content Include="Content\Source\bootstrap\less\pagination.less" />
+    <Content Include="Content\Source\bootstrap\less\panels.less" />
+    <Content Include="Content\Source\bootstrap\less\popovers.less" />
+    <Content Include="Content\Source\bootstrap\less\print.less" />
+    <Content Include="Content\Source\bootstrap\less\progress-bars.less" />
+    <Content Include="Content\Source\bootstrap\less\responsive-embed.less" />
+    <Content Include="Content\Source\bootstrap\less\responsive-utilities.less" />
+    <Content Include="Content\Source\bootstrap\less\scaffolding.less" />
+    <Content Include="Content\Source\bootstrap\less\tables.less" />
+    <Content Include="Content\Source\bootstrap\less\theme.less" />
+    <Content Include="Content\Source\bootstrap\less\thumbnails.less" />
+    <Content Include="Content\Source\bootstrap\less\tooltip.less" />
+    <Content Include="Content\Source\bootstrap\less\type.less" />
+    <Content Include="Content\Source\bootstrap\less\utilities.less" />
+    <Content Include="Content\Source\bootstrap\less\variables.less" />
+    <Content Include="Content\Source\bootstrap\less\wells.less" />
+    <Content Include="Content\Source\bootstrap\LICENSE" />
+    <Content Include="Content\Source\bootstrap\package.json" />
+    <Content Include="Content\Source\bootstrap\README.md" />
+    <Content Include="Logic\Handler1.ashx" />
+    <None Include="Properties\PublishProfiles\nancy_up.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\uploads\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

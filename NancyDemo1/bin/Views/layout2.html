@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NancyDemo1</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="@Path['~/content/source/bootstrap/dist/css/bootstrap.css']" rel="Stylesheet" />
+    <link href="@Path['~/content/default.min.css']" rel="Stylesheet" />
+    
+    <script src="@Path['~/content/scripts/jquery.min.js']"></script>
+    <script src="@Path['~/content/scripts/highlight.min.js']"></script>
+    <script src="@Path['content/source/bootstrap/dist/js/bootstrap.js']"></script>
+    
+    <script>
+        $(document).ready(function () {
+            hljs.tabReplace = '    ';
+            hljs.initHighlightingOnLoad();
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            padding-top: 10px;
+            padding-bottom: 40px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!--head-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3"
+                 style="background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-xs-6 col-sm-3"
+                 style="background-color: #dedef8;box-shadow:
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut.
+                </p>
+            </div>
+
+            <div class="clearfix visible-xs"></div>
+
+            <div class="col-xs-6 col-sm-3"
+                 style="background-color: #dedef8;
+         box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-3"
+                 style="background-color: #dedef8;box-shadow:
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Content-->
+    <div class="container">
+        @Section['Content']
+    </div>
+</body>
+</html>

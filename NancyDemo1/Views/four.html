@@ -1,0 +1,21 @@
+﻿@Master['layout2']
+
+@Section['Content']
+
+    <div>i'm two</div>
+    <form action="@Path['three']" method="post">
+        <div>
+            姓名<input type="=text" name="name"/>
+        </div>
+        <div>
+            年龄<input type="=text" name="age" />
+        </div>
+        <input type="submit" id="test" />
+    </form>
+<script>
+$("#test").click(function(){
+    //alert("s");
+
+})
+</script>
+@EndSection
